@@ -1,6 +1,19 @@
 .Application {
-  width: 600px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  width: 1000px;
   margin: auto;
-  border: 5px solid #b5fbdd;
+  margin-top: 8vh;
   padding: 1em;
+  background-color: white;
+}
+
+h1 {
+  border-bottom: 3px solid;
+  text-align: center;
+}
+
+p {
+  margin-top: -20px;
+  margin-bottom: 35px;
+  text-align: center;
 }

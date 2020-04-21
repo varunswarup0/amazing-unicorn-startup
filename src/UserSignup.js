@@ -7,7 +7,7 @@ const initialState = {
   email: "",
   password: "",
   confirmPassword: "",
-  investmentInterest: false,
+  investmentInterest: false
 };
 
 const UserSignup = () => {
@@ -20,7 +20,7 @@ const UserSignup = () => {
 
   const handleChange = (event) => {
     setState({
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
 
@@ -74,7 +74,7 @@ const UserSignup = () => {
           checked={state.investmentInterest}
           onChange={(event) =>
             setState({
-              investmentInterest: !event.target.checked,
+              investmentInterest: !event.target.checked
             })
           }
         />
