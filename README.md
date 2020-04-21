@@ -1,5 +1,17 @@
 # Amazing Unicorn Startup
 
+<p align="center">
+    <!-- <a href="" target="_blank"> -->
+        <img width="50%" src="https://github.com/varunswarup0/user-signup-react-state/blob/master/amazingUnicornStartup.png" alt="Amazing Unicorn Startup">
+    <!-- </a> -->
+</p>
+
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 In the base `master` branch, we have a mostly functional form. But, there are two problems.
 
 1. Using individual state hooks for ever field is getting a bit cumbersome. It would be cool if we had something closer to `this.setState`.
@@ -16,7 +28,7 @@ Could we create a hook that mostly works like `this.setState`.
 ## Creating the Hook
 
 ```js
-import { useReducer } from 'react';
+import { useReducer } from "react";
 
 const reducer = (previousState = {}, updatedState = {}) => {
   return { ...previousState, ...updatedState };
@@ -25,7 +37,7 @@ const reducer = (previousState = {}, updatedState = {}) => {
 const useSetState = (initialState = {}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const setState = updatedState => dispatch(updatedState);
+  const setState = (updatedState) => dispatch(updatedState);
 
   return [state, setState];
 };
@@ -41,17 +53,17 @@ We just make an object for the initial state of the form.
 
 ```js
 const initialState = {
-  userName: '',
-  email: '',
-  password: '',
-  passwordConfirmation: ''
+  userName: "",
+  email: "",
+  password: "",
+  passwordConfirmation: ""
 };
 ```
 
 We can add a dymanic function for changing the state based on the field name.
 
 ```js
-const handleChange = event => {
+const handleChange = (event) => {
   setState({
     [event.target.name]: event.target.value
   });
@@ -76,14 +88,14 @@ And now, each input field can be refactored somewhere along the lines of this fi
 You could also implement this without a reducer, but I prefer the previous patter.
 
 ```js
-import { useState, useCallback } from 'react';
+import { useState, useCallback } from "react";
 
-const useSetState = initialState => {
+const useSetState = (initialState) => {
   const [state, set] = useState(initialState);
 
   const setState = useCallback(
-    updatedState => {
-      set(previousState => ({ ...previousState, ...updatedState }));
+    (updatedState) => {
+      set((previousState) => ({ ...previousState, ...updatedState }));
     },
     [set]
   );
@@ -92,5 +104,4 @@ const useSetState = initialState => {
 };
 
 export default useSetState;
-
 ```
