@@ -1,6 +1,14 @@
 .Application {
   width: 600px;
   margin: auto;
-  border: 5px solid #b5fbdd;
+  /* border: 5px solid #b5fbdd; */
   padding: 1em;
+
+  background: #fff;
+  /* padding: 5px; */
+  /* width: 260px; */
+  /* height: 570px; */
+  overflow: hidden;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  /* transition: height 300ms ease-out, width 300ms ease-out; */
 }

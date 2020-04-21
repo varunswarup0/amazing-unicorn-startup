@@ -5,10 +5,17 @@
 
 .UserSignup--checkbox input {
   display: inline;
-  width: auto;
+  /* width: auto; */
 }
 
 .error {
   color: #fe634e;
   font-size: 0.6em;
+}
+
+.mast__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  line-height: 1;
 }
