@@ -2,9 +2,9 @@
 <a href="https://www.linkedin.com/in/varun-swarup/">
     <img src="https://img.shields.io/badge/Support-Recommed%2FEndorse%20me%20on%20Linkedin-yellow?style=for-the-badge&logo=linkedin" alt="Recommend me on LinkedIn" /></a>
 
-<p align="center">   
+  
     ![alt text](https://github.com/varunswarup0/amazing-unicorn-startup/blob/master/amazingUnicornStartup.png)
-</p>
+
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
