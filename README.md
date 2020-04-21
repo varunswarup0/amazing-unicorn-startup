@@ -4,7 +4,7 @@
 
 <p align="center">
     <!-- <a href="" target="_blank"> -->
-        <img width="100%" src="https://github.com/varunswarup0/amazing-unicorn-startup/blob/master/amazingUnicornStartup.png" alt="Amazing Unicorn Startup">
+        <img src="https://github.com/varunswarup0/amazing-unicorn-startup/blob/master/amazingUnicornStartup.png" alt="Amazing Unicorn Startup">
     <!-- </a> -->
 </p>
 
